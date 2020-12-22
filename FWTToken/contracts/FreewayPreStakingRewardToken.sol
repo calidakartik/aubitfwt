@@ -19,7 +19,7 @@ contract FreewayPreStakingRewardToken is Initializable, Context, ERC20, ERC20Min
      * @dev Constructor that gives sender initial tokens and respective roles.
      */
     function initialize(address sender) public initializer {
-        ERC20Detailed.initialize("FreewayPreStakingReward", "FPR", 18);
+        ERC20Detailed.initialize("Freeway Pre-Staking Reward", "FPR", 18);
         ERC20Mintable.initialize(sender);
         BurnerRole.initialize(sender);
         DeployerRole.initialize(sender);
